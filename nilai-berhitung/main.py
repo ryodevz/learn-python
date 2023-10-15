@@ -3,7 +3,7 @@ Web Profile : https://ryodev.my.id
 Repo        : https://github.com/ryotwell/learn-python
 """
 
-nilai_berhitung = [["Upin",80,90],["Jarjit",70,75],["Ipin",94,90],["Mail",88,96],["Ehsan",92,75]]
+nilai_berhitung = [["Upin", 80, 90], ["Jarjit", 70, 75], ["Ipin", 94, 90], ["Mail", 88, 96], ["Ehsan", 92, 75]]
 
 def getNilaiTertinggi(data):
     nilai_tertinggi = {"name": 0, "rata": 0}
@@ -13,7 +13,7 @@ def getNilaiTertinggi(data):
         
         if(rata_rata > nilai_tertinggi['rata']):
             nilai_tertinggi = {"name": user[0], "rata": rata_rata}
-            
+
     return nilai_tertinggi
     
 user = getNilaiTertinggi(nilai_berhitung)
